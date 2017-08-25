@@ -1,0 +1,8 @@
+- name: "Install Ansible on Remote Hosts"
+  apt:
+    name: ansible
+    state: latest
+    update_cache: yes
+
+- name: update ansible
+  shell: pip install --upgrade ansible

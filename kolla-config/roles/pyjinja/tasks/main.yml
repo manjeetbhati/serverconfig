@@ -1,0 +1,7 @@
+- name: Install the package "python-jinja2"
+  apt:
+    name: python-jinja2
+    state: present
+
+- name: upgrade python-jinja2
+  shell: pip install --upgrade jinja2

@@ -1,0 +1,26 @@
+- name: Install Pip
+  become: true
+  apt:
+    name: python-pip
+    state: latest
+
+
+- name: upgrade pip
+  shell: pip install --upgrade pip
+
+- name: Install python-pkg
+  become: true
+  apt:
+    name: python-pkg-resources
+    state: latest
+
+- name: Install aptitude
+  become: true
+  apt:
+    name: aptitude
+
+- name: Install setuptools
+  become: true
+  apt:
+    name: python-setuptools
+    state: latest
