@@ -10,7 +10,7 @@ following packages:
  - ansible
  - pyjinja
 
-The role initconfig to install packages required to manage pip
+The role initconfig is for installing packages required to manage pip
 packages and required packages for ansible script to work properly.
 
 
