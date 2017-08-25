@@ -1,5 +1,5 @@
-Install Pre required Packages
------------------------------
+Install Pre Configuration Packages
+----------------------------------
 
 This is an example, how to install packages on multiple
 servers via ansible scripts. This scipt has roles to install
