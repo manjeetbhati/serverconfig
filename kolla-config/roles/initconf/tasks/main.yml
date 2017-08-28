@@ -24,3 +24,19 @@
   apt:
     name: python-setuptools
     state: latest
+
+- name: Install required packages on all hosts
+  apt: name={{item}} state=installed
+  with_items:
+    - ntp
+    - ntpdate
+    - python-pip
+    - python-selinux
+    - python-dev
+    - libffi-dev
+    - libssl-dev
+    - gcc
+    - git
+
+- name: mount /run
+  command: "mount --make-shared /run"
