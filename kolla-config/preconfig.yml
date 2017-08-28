@@ -3,3 +3,7 @@
   
   roles:
   - initconf
+  - update
+  - ansible
+  - docker
+  - pyjinja
